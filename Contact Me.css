@@ -19,7 +19,7 @@ html, body {
     top: 20%;
     display: flex;
     justify-content: center;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     border: 2px solid black;
     border-radius: 20px;
     background-color: #93FFD8;
