@@ -28,6 +28,7 @@ html, body {
     position: relative;
     display: flex;
     font-size: 30px;
+    color: #2F3A8F;
     bottom: 5%;
 }
 .info {
