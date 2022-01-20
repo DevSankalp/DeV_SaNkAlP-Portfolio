@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 html, body {
     margin: 0%;
     padding: 0%;
@@ -14,12 +13,12 @@ html, body {
 }
 .cnt {
     position: absolute;
-    width: 400px;
+    width: 380px;
     height: 400px;
     top: 20%;
     display: flex;
     justify-content: center;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     border: 2px solid black;
     border-radius: 20px;
     background-color: #93FFD8;
@@ -28,24 +27,32 @@ html, body {
     position: relative;
     display: flex;
     font-size: 30px;
+    color: #2F3A8F;
     bottom: 5%;
 }
 .info {
     position: absolute;
     display: flex;
     top: 20%;
+    left: 15%;
     text-align: left;
 }
-.info1 {
+.im {
     position: absolute;
+    display: flex;
+    width: 10%;
+    right: 100%;
+}
+.info1 {
+    position: relative;
     width: 400px;
     height: 200px;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     top: 40%;
 }
 h3 {
     position: relative;
-    top: 20%;
+    top: 50px;
     margin-bottom: 0%;
     font-family: 'Poppins',cursive;
     font-size: 150%;
@@ -73,6 +80,8 @@ form {
 }
 .p1 {
     position: relative;
-    bottom: 12px;
-    right: 93px;
+    width:50%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    left: 3%
 }
