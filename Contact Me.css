@@ -1,87 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
 html, body {
+    background-color: #04293A;
     margin: 0%;
     padding: 0%;
-    background-color: #04293A;
 }
 .page {
-    width: 100%;
-    height: 790px;
     display: flex;
+    height: 790px;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 .cnt {
-    position: absolute;
-    width: 380px;
-    height: 400px;
-    top: 20%;
-    display: flex;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
     border: 2px solid black;
     border-radius: 20px;
     background-color: #93FFD8;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    height: 400px;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    width: 380px;
 }
 .hed {
-    position: relative;
+    bottom: 5%;
+    color: #2F3A8F;
     display: flex;
     font-size: 30px;
-    color: #2F3A8F;
-    bottom: 5%;
+    position: relative;
 }
 .info {
-    position: absolute;
     display: flex;
-    top: 20%;
     left: 15%;
+    position: absolute;
+    top: 20%;
     text-align: left;
 }
 .im {
-    position: absolute;
     display: flex;
-    width: 10%;
+    position: absolute;
     right: 100%;
+    width: 10%;
 }
 .info1 {
-    position: relative;
-    width: 400px;
-    height: 200px;
     font-family: 'Poppins', sans-serif;
+    height: 200px;
+    position: relative;
     top: 40%;
+    width: 400px;
 }
 h3 {
-    position: relative;
-    top: 50px;
-    margin-bottom: 0%;
     font-family: 'Poppins',cursive;
     font-size: 150%;
+    margin-bottom: 0%;
+    position: relative;
+    top: 50px;
 }
 form {
     position: relative;
-    width: 100%;
     top: 30%;
+    width: 100%;
 }
 .ur1 {
-    width: 60%;
-    height: 30px;
     border-radius: 10px;
+    height: 30px;
+    width: 60%;
 }
 .ur1:hover {
     background-color: darkseagreen;
 }
 .btn {
-    height: 30px;
     border-radius: 10px;
     border-style: 2px solid #96CEB4;
+    height: 30px;
 }
 .btn:hover {
     background-color: darkseagreen;
 }
 .p1 {
-    position: relative;
-    width:50%;
+    left: 3%;
     margin-top: 0%;
     margin-bottom: 0%;
-    left: 3%
+    position: relative;
+    width:50%;
 }
