@@ -1,71 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
 html, body {
-    background-color: #04293A;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
 }
 .page {
-    display: flex;
-    height: 790px;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-}
-.cnt {
+    background-color: #93FFD8;
     border: 2px solid black;
     border-radius: 20px;
-    background-color: #93FFD8;
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    height: 400px;
-    justify-content: center;
-    position: absolute;
-    top: 20%;
-    width: 380px;
-}
-.hed {
-    bottom: 5%;
-    color: #2F3A8F;
-    display: flex;
-    font-size: 30px;
+    margin: 11% auto;
     position: relative;
+    text-align: center;
+    width: 395px;
 }
-.info {
-    display: flex;
-    left: 15%;
-    position: absolute;
-    top: 20%;
+.cnt {
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: auto auto;
+    grid-template-columns: 80px 300px;
+}
+img {
+    width: 50%;
+    margin-top: 10px;
+}
+p {
     text-align: left;
 }
-.im {
-    display: flex;
-    position: absolute;
-    right: 100%;
-    width: 10%;
-}
 .info1 {
-    font-family: 'Poppins', sans-serif;
-    height: 200px;
-    position: relative;
-    top: 40%;
-    width: 400px;
-}
-h3 {
-    font-family: 'Poppins',cursive;
-    font-size: 150%;
-    margin-bottom: 0%;
-    position: relative;
-    top: 50px;
-}
-form {
-    position: relative;
-    top: 30%;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .ur1 {
     border-radius: 10px;
     height: 30px;
-    width: 60%;
+    width: 100%;
 }
 .ur1:hover {
     background-color: darkseagreen;
@@ -73,15 +42,38 @@ form {
 .btn {
     border-radius: 10px;
     border-style: 2px solid #96CEB4;
-    height: 30px;
+    margin: 10px;
 }
 .btn:hover {
     background-color: darkseagreen;
 }
-.p1 {
-    left: 3%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    position: relative;
-    width:50%;
+@media only screen and (max-width: 600px) {
+    html, body {
+        background-color: #93FFD8;
+        text-align: center;
+    }
+    .page{
+        border: 0;
+        margin: 25% auto 0;
+        width: 340px;
+    }
+    .cnt {
+        display: grid;
+        margin: 0 auto;
+        overflow: hidden;
+        grid-template-columns: auto auto;
+        grid-template-columns: 50px 280px;
+        width: 330px;
+    }
+    p {
+        margin: 0;
+        text-align: center;
+    }
+    img {
+        margin: 0;
+        width: 50%;
+    }
+    .btn {
+        margin: 10px 0;
+    }
 }

@@ -1,70 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
 html, body {
-    background-color: #FDEBF7;
     font-family: 'poppins', sans-serif;
+    background-color: rgba(0, 180, 216, 0.2);
     margin: 0;
-    text-align: center;
+    height: 100%;
+    overflow: hidden;
 }
-
-
 .nav-container {
-    background-color: #F7ECDE;
     display: flex;
-    justify-content:center;
-    border: solid 1px;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
 }
 .nav-grid {
     display: flex;
     list-style: none;
     margin-bottom: 0;
+    padding: 0;
 }
 li {
-    padding-left: 20%;
+    font-size: 20px;
+    padding: 15px;
 }
 a{
+    color: #21325E;
     text-decoration: none;
 }
-.cont1 {
-    background-color: #FDEBF7;
-    border-radius: 1rem;
-    box-shadow: 6px 6px 50px 20px rgba(0, 0, 0, 0.2);
-    margin: 11% auto;
-    max-width: 60%;
-} 
-.cont1:hover {
-    background-color: #96CEB4;
-    color: white;
+a:hover{
+    background-color: rgba(0, 180, 216, 1);
+    color: #03045E;
+    font-size: 23px;
+}
+.anim-cont {
+    background-color: rgba(0, 180, 216, 0.2);
+    background-image: linear-gradient(to right, rgba(0, 180, 216, 1),rgba(0, 180, 216, 0.1));
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+}
+.name {
+    font-size: 55px;
+    margin: 0;
+    position: absolute;
+    left: 10%;
+    top: 35%;
 }
 .intro {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    height: 93%;
-    padding: 1rem;
-    text-align: left;
-    overflow-wrap: break-word;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+    width: 400px;
+}
+p {
+    margin: 0;
 }
 .profile {
-    margin: auto;
-    padding: 20px 0;
+    padding: 20px;
     width: 80%;
 }
-
-
-.button-container {
-    bottom: 0;
-    right: 1rem;
+@media only screen and (max-width: 400px) {
+    .nav-container {
+        justify-content: center;
+    }
+    li {
+        font-size: 12.5px;
+    }
+    .name {
+        position: relative;
+        font-size: 40px;
+        right: 0;
+    }
+    .intro {
+        font-size: 15px;
+        position: absolute;
+        right: 0;
+        width: 200px;
+    }
 }
-.b-c2 {
-    border-radius: 10px;
-    border-color:#96CEB4;
-    background-color: #FED1EF;
-}
-.b-c2:hover {
-    background-color: #F3C892;
-}
-@media only screen and (max-width: 1000px) {
-    html, body {
-        font-size: 1rem;
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 40px;
+        right: 0;
+    }
+    .anim-cont {
+        background-color: transparent;
+        background-image: none;
+    }
+    .intro {
+        font-size: 20px;
+        position: absolute;
+        width: 280px;
     }
 }
