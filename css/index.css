@@ -7,7 +7,8 @@ html, body {
 .nav-container {
     display: flex;
     justify-content: end;
-    position: absolute;
+    position: fixed;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(100, 255, 255, 0), rgba(100, 255, 255, 0), rgba(255, 255, 255, 0));
     width: 100%;
 }
 .nav-grid {
@@ -21,7 +22,7 @@ li {
     padding: 15px;
 }
 a{
-    color: #21325E;
+    color: black;
     font-size: 25px;
     text-decoration: none;
 }
@@ -30,6 +31,24 @@ a:hover{
     border-radius: 20px;
     color: #fff;
     padding: 0 10px;
+}
+.styles-1 {
+    background-color: rgba(0, 180, 216, 0.3);
+    height: 70%;
+    width: 50%;
+    left: -10%;
+    top: -20%;
+    position: absolute;
+    transform: rotate(25deg);
+}
+.styles-2 {
+    background-color: rgba(45, 85, 100, 0.3);
+    height: 30%;
+    width: 40%;
+    position: absolute;
+    left: -18%;
+    top: 46.3%;
+    transform: rotate(-65deg);
 }
 .name-cont {
     display: inline-block;
@@ -69,7 +88,7 @@ p {
 .skill-container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 70%;
 }
 .skill-content {
     background-color: #86C6F4;
@@ -89,6 +108,14 @@ h2 {
 }
 li {
     list-style: none;
+}
+@media only screen and (max-width: 1500px) {
+    .styles-2 {
+        position: absolute;
+    }
+    .nav-container {
+        position: absolute;
+    }
 }
 @media only screen and (max-width: 1200px) {
     .intro {
