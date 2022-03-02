@@ -1,203 +1,312 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
-html, body {
-    font-family: 'poppins', sans-serif;
-    background-color: rgba(0, 180, 216, 0.2);
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap");
+html,
+body {
+  font-family: "poppins", sans-serif;
+  background-color: rgba(0, 180, 216, 0.2);
+  margin: 0;
 }
 .nav-container {
-    display: flex;
-    justify-content: end;
-    position: fixed;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(100, 255, 255, 0), rgba(100, 255, 255, 0), rgba(255, 255, 255, 0));
-    width: 100%;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(100, 255, 255, 0),
+    rgba(100, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
+  width: 100%;
+  z-index: 10;
 }
 .nav-grid {
-    display: flex;
-    list-style: none;
-    margin-bottom: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
 }
 li {
-    font-size: 20px;
-    padding: 15px;
+  font-size: 20px;
+  padding: 15px;
 }
-a{
-    color: black;
-    font-size: 25px;
-    text-decoration: none;
+.nav-content {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
 }
-a:hover{
-    background-color: rgba(0, 180, 216, 1);
-    border-radius: 20px;
-    color: #fff;
-    padding: 0 10px;
+.nav-content:hover {
+  background-color: rgba(0, 180, 216, 1);
+  border-radius: 20px;
+  color: #fff;
+  padding: 0 10px;
 }
 .styles-1 {
-    background-color: rgba(0, 180, 216, 0.3);
-    height: 70%;
-    width: 50%;
-    left: -10%;
-    top: -20%;
-    position: absolute;
-    transform: rotate(25deg);
+  background-color: rgba(0, 180, 216, 0.3);
+  height: 70%;
+  width: 50%;
+  left: -20%;
+  top: -20%;
+  position: absolute;
+  transform: rotate(25deg);
+  animation: anim1;
+  animation-duration: 2s;
 }
 .styles-2 {
-    background-color: rgba(45, 85, 100, 0.3);
-    height: 30%;
-    width: 40%;
-    position: absolute;
-    left: -18%;
-    top: 46.3%;
-    transform: rotate(-65deg);
+  background-color: rgba(45, 85, 100, 0.3);
+  height: 30%;
+  width: 40%;
+  position: absolute;
+  left: -24%;
+  top: 46.3%;
+  transform: rotate(-65deg);
+  animation: anim2;
+  animation-duration: 2s;
+}
+.styles-3 {
+  background-color: rgba(45, 180, 216, 0.5);
+  position: absolute;
+  top: 10%;
+  left: -8%;
+  width: 20%;
+  height: 60%;
+  transform: rotate(60deg);
+  animation: anim3;
+  animation-duration: 2s;
+}
+@keyframes anim1 {
+    from {
+        left: -50%;
+        transform: rotate(-90deg);
+    }
+    to {
+        left:-20%;
+        transform: rotate(25deg);
+    }
+}
+@keyframes anim2 {
+    from {
+        left: -50%;
+        transform: rotate(0deg);
+    }
+    to {
+        left: -24%;
+        transform: rotate(-65deg);
+    }
+}
+@keyframes anim3 {
+    from {
+        left: -50%;
+        transform: rotate(0deg);
+    }
+    to {
+        left: -8%;
+        transform: rotate(60deg);
+    }
+}
+
+.styles-4 {
+  background-color: rgba(45, 180, 216, 0.5);
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  top: 1290px;
+  left: -20%;
+  transform: rotate(45deg);
+}
+.styles-5 {
+  background-color: rgba(45, 180, 216, 0.5);
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 1195px;
+  left: 130px;
+  border-radius: 100%;
 }
 .name-cont {
-    display: inline-block;
-    height: 50rem;
-    width: 30%;
+  display: inline-block;
+  height: 50rem;
+  width: 30%;
 }
 .name {
-    font-size: 55px;
-    left: 9%;
-    margin: 0;
-    position: absolute;
-    top: 35%;
+  font-size: 55px;
+  left: 19%;
+  margin: 0;
+  position: absolute;
+  top: 45%;
 }
 .intro {
-    bottom: 70px;
-    display: inline-block;
-    font-size: 25px;
-    left: 15%;
-    position: relative;
-    width: 400px;
+  bottom: 320px;
+  display: inline-block;
+  font-size: 25px;
+  left: 15%;
+  position: relative;
+  width: 400px;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 .skills {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 800px;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  justify-content: center;
 }
 .skill-gif {
-    border-radius: 200px;
-    float: left;
-    width: 150px;
+  border-radius: 200px;
+  float: left;
+  width: 150px;
 }
 .skill-container {
-    display: flex;
-    justify-content: center;
-    width: 70%;
+  display: flex;
+  justify-content: center;
+  width: 70%;
 }
 .skill-content {
-    background-color: #86C6F4;
-    border-radius: 10px;
-    font-size: 25px;
-    margin: 10px;
-    padding: 10px 20px;
+  background-color: #86c6f4;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px 20px;
 }
 .text-icon {
-    float: left;
-    margin: 5px;
-    width:50px;
+  float: left;
+  margin: 5px;
+  width: 50px;
 }
 h2 {
-    font-size: 40px;
-    margin: 15px 0 100px;
+  font-size: 40px;
+  margin: 15px 0 100px;
 }
 li {
-    list-style: none;
+  list-style: none;
+}
+footer {
+  background-image: linear-gradient(to bottom right, rgba(184, 255, 249, 0.5), rgba(184, 255, 249, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top: solid black 1px;
+}
+.cnt {
+  display: flex;
+  justify-content: center;
+  width: 14%;
+  margin: 50px 0;
+}
+.icon {
+  margin-right: 5px;
+  width: 40px;
+}
+.icon:hover {
+  position: relative;
+  bottom: 10px;
 }
 @media only screen and (max-width: 1500px) {
-    .styles-2 {
-        position: absolute;
-    }
-    .nav-container {
-        position: absolute;
-    }
+  .styles-2 {
+    position: absolute;
+  }
+  .styles-4, .styles-5 {
+      display: none;
+  }
+  .nav-container {
+    position: absolute;
+  }
+  .intro {
+      bottom: 30px;
+  }
 }
 @media only screen and (max-width: 1200px) {
-    .intro {
-        bottom: 140px;
-        left: 100px;
-    }
+  .intro {
+    bottom: -40px;
+    left: 100px;
+  }
 }
 @media only screen and (max-width: 800px) {
-    a {
-        font-size: 20px;
-    }
-    .name {
-        font-size: 40px;
-    }
-    .intro {
-        font-size: 20px;
-        bottom: 150px;
-        left: auto;
-    }
-    .topnav {
-        margin-right: 10px;
-    }
-    .skill-container {
-        flex-direction: column;
-        width: 70%;
-    }
-    .skill-content {
-        margin: 20px;
-    }
-    .skills {
-        height: 1200px;
-    }
+  a {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .intro {
+    font-size: 20px;
+    left: auto;
+  }
+  .styles-3 {
+      display: none;
+  }
+  .topnav {
+    margin-right: 10px;
+  }
+  .skill-container {
+    flex-direction: column;
+    width: 70%;
+  }
+  .skill-content {
+    margin: 20px;
+  }
+  .skills {
+    height: 1200px;
+  }
 }
 @media only screen and (max-width: 600px) {
-    a {
-        font-size: 14px;
-    }
-    .name {
-        font-size: 40px;
-        right: 5%;
-        top: 30%;
-    }
-    .anim-cont {
-        background-color: transparent;
-        background-image: none;
-    }
-    .intro {
-        font-size: 20px;
-        position: absolute;
-        width: 280px;
-        bottom: 50px;
-    }
-    .skill-container {
-        width:100%;
-    }
-    .skill-content {
-        margin: 10px;
-    }
-    .text-icon {
-        width: 35px;
-    }
+  a {
+    font-size: 14px;
+  }
+  .name {
+    font-size: 40px;
+    right: 5%;
+    top: 30%;
+  }
+  .intro {
+    font-size: 20px;
+    position: absolute;
+    width: 280px;
+    bottom: 50px;
+  }
+  .skill-container {
+    width: 100%;
+  }
+  .skill-content {
+    margin: 10px;
+  }
+  .text-icon {
+    width: 35px;
+  }
 }
 @media only screen and (max-width: 400px) {
-    .topnav {
-        margin: 0;
-    }
-    .nav-container {
-        justify-content: center;
-    }
-    li {
-        font-size: 15px;
-        padding: 13px;
-    }
-    .name {
-        position: relative;
-        font-size: 40px;
-        right: 0;
-    }
-    .intro {
-        font-size: 15px;
-        position: absolute;
-        right: 5px;
-        width: 200px;
-    }
+  .topnav {
+    margin: 0;
+  }
+  .nav-container {
+    justify-content: center;
+  }
+  li {
+    font-size: 15px;
+    padding: 13px;
+  }
+  .name {
+    position: relative;
+    font-size: 40px;
+    right: 0;
+  }
+  .intro {
+    font-size: 15px;
+    position: absolute;
+    right: 5px;
+    width: 200px;
+  }
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
