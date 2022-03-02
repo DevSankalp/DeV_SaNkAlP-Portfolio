@@ -184,15 +184,19 @@ li {
 footer {
   background-image: linear-gradient(to bottom right, rgba(184, 255, 249, 0.5), rgba(184, 255, 249, 1));
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   border-top: solid black 1px;
 }
+h5 {
+  position: absolute;
+  left: 100px;
+  width: 115px;
+}
 .cnt {
   display: flex;
   justify-content: center;
-  width: 14%;
+  width: 100%;
   margin: 50px 0;
 }
 .icon {
@@ -224,9 +228,6 @@ footer {
   }
 }
 @media only screen and (max-width: 800px) {
-  a {
-    font-size: 20px;
-  }
   .name {
     font-size: 40px;
   }
@@ -252,9 +253,6 @@ footer {
   }
 }
 @media only screen and (max-width: 600px) {
-  a {
-    font-size: 14px;
-  }
   .nav-content {
     font-size: 15px;
   }
@@ -277,6 +275,9 @@ footer {
   }
   .text-icon {
     width: 35px;
+  }
+  footer {
+    display: block;
   }
 }
 @media only screen and (max-width: 400px) {

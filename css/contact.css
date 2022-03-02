@@ -58,6 +58,12 @@ footer {
     height: 60px;
     width: 100%;
 }
+h5 {
+position: absolute;
+bottom: 20px;
+left: 100px;
+width: 115px;
+}
 .cnt {
     display: flex;
     width: 14%;
@@ -106,6 +112,9 @@ img:hover {
     }
     footer {
         width: 75%;
+    }
+    h5 {
+        bottom: -40px;
     }
 }
 @media only screen and (max-width: 400px) {
