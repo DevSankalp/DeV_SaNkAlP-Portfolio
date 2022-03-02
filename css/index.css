@@ -255,6 +255,9 @@ footer {
   a {
     font-size: 14px;
   }
+  .nav-content {
+    font-size: 20px;
+  }
   .name {
     font-size: 40px;
     right: 5%;
