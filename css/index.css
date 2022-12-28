@@ -1,10 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html,
 body {
   font-family: "poppins", sans-serif;
   background-color: rgba(0, 180, 216, 0.2);
   margin: 0;
+}
+
+.about {
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #c1cdde;
+  z-index: 2;
+}
+.about::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #4083e0;
+  z-index: 1;
 }
 
 .nav-container {
@@ -34,12 +61,37 @@ body {
   transition: 0.5s;
 }
 
-.links {
+.links_about {
+  position: relative;
   color: black;
   padding: 0 5px;
   font-size: 25px;
   text-decoration: none;
   transition: 0.5s;
+  font-weight: 600;
+}
+
+.links_about:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: #d61c4e;
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.links {
+  position: relative;
+  color: black;
+  padding: 0 5px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: 600;
 }
 
 .links:hover {
@@ -50,7 +102,7 @@ body {
 .links:before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   left: 0;
   width: 100%;
   height: 10%;
@@ -58,13 +110,38 @@ body {
   transition: 0.5s;
   transform-origin: right;
   transform: scaleX(0);
-  z-index: -1;
 }
 
 .links:hover:before {
   transition: transform 0.5s;
   transform-origin: left;
   transform: scaleX(1);
+}
+
+.links_about1 {
+  position: relative;
+  color: black;
+  padding: 0 5px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  transform-origin: right;
+  font-weight: 600;
+}
+
+.links_about1:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: #d61c4e;
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+  z-index: -1;
+  border-radius: 2px;
 }
 
 .styles-1 {
@@ -169,6 +246,17 @@ footer {
       rgba(184, 255, 249, 0.5),
       rgba(184, 255, 249, 1));
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  background: #fff1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fff2;
+}
 @media only screen and (max-width: 1500px) {
   .styles-2 {
     position: absolute;
@@ -184,15 +272,26 @@ footer {
   .styles-3 {
     display: none;
   }
+  .links::before {
+    display: none;
+  }
+  .links_about::before {
+    display: none;
+  }
+  .links_about1::before {
+    display: none;
+  }
 }
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
+@media only screen and (min-width: 1200px) {
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
 
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

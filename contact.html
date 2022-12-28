@@ -2,40 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
-    <link rel="stylesheet" href="css/contact.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <a href="index.html"><button style="background-color: transparent; border: none; position: fixed; top: 30px; left: 20px;"><img src="images/back.png" alt="back" style="left: 5px; top: 5px; bottom: 0;"></button></a>
-    <header>
-      <div class="info1">
-        <h2 style="color: #000; font-family: Arial, sans-serif">I'D BE GLAD TO HEAR FROM YOU</h2>
-        <form action="form/form.php" class="info2">
-          <span>Full Name</span>
-          <input type="text" placeholder="What's your full name" class="ur1" id="int"/>
-          <span>E-Mail</span>
-          <input type="text" placeholder="you@example.com" class="ur1" />
-          <span>Company</span>
-          <input type="text" placeholder="Company(optional)" class="ur1" />
-          <button class="btn">Continue to submit your details</button>
+  <body style="font-family: 'Poppins', sans-serif; color: black;">
+    <img src="https://drive.google.com/uc?id=10f9Q2-mjTM0qhF6CnAR8-kwwNK_DCX45" alt="Contact Banner">
+    <section class="absolute top-[120px] w-[100vw] flex justify-center">
+      <div class="md:w-[70%] md:h-[80vh] backdrop-blur-lg rounded-lg bg-white grid grid-cols-2 px-12 pb-12 justify-items-center" style="box-shadow: 2px 2px 6px;">
+        <h2 class="text-3xl px-8 pt-8 col-span-2">I'D BE GLAD TO HEAR FROM YOU</h2>
+        <form method="post" autocomplete="off" name="google-sheet" class="flex flex-col px-8 w-[100%] bg-teal-100 rounded-lg">
+          <input type="text" name="Time" class="hidden" id="time">
+          <label for="Name" class="relative my-12 border-0 before:content-[''] before:absolute before:bg-teal-400 before:bottom-0 before:left-0 before:w-[100%] before:h-[2px]">
+          <input type="text" placeholder="Full Name" name="Name" class="focus:outline-none mb-4 w-[100%] px-2 bg-inherit" required/>
+          </label>
+          <label for="Email" class="relative my-12 border-0 before:content-[''] before:absolute before:bg-teal-400 before:bottom-0 before:left-0 before:w-[100%] before:h-[2px]">
+          <input type="email" placeholder="you@example.com" name="Email" class="focus:outline-none mb-4 w-[100%] px-2 bg-inherit" required/>
+          </label>
+          <label for="Company" class="relative my-12 border-0 before:content-[''] before:absolute before:bg-teal-400 before:bottom-0 before:left-0 before:w-[100%] before:h-[2px]">
+          <input type="text" placeholder="Company(optional)" name="Company" class="focus:outline-none mb-4 w-[100%] px-2 bg-inherit" required/>
+          </label>
+          <button type="submit" name="submit" class="mb-8 w-[60%] self-center drop-shadow-2xl btn hover:bg-teal-400 border-0 bg-white text-inherit">Submit</button>
         </form>
+        <img src="4605426_2423392.jpg" alt="" class="w-[100%] h-[100%] rounded-lg">
+        <!-- <img src="https://drive.google.com/uc?id=15Fq17YVi9Y9Z8xw0L7IU8_h3PbdDJP7N" alt=""> -->
       </div>
-    </header>
-    <footer>
-      <h5>&copy; 2022 Sankalp</h5>
-      <div class="cnt">
-        <a href="mailto:sankalpsrivastava1113@gmail.com;" target="new"
-          ><img src="images/gmail.png" alt="Gmail"
-        /></a>
-        <a href="https://github.com/DevSankalp" target="new"
-          ><img src="images/github.webp" alt="Github"
-        /></a>
-        <a href="https://discord.gg/SF3ZFKmc" target="new"
-          ><img src="images/discord.png" alt="Discord"
-        /></a>
-      </div>
-    </footer>
+    </section>
   </body>
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyoPip57lLobQPruelfN-jzKb1hmPriwmtKi2DgMvNZHvOB0K8LWkAh5gOS-zl6dLk09A/exec";
+    const form = document.forms['google-sheet'];
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      var time = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
+      var timestamp = document.getElementById("time");
+      timestamp.setAttribute("value", time);
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </html>
