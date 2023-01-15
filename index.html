@@ -412,7 +412,10 @@
     var timestamp = document.getElementById("time");
     timestamp.setAttribute("value", time);
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .then(response => {
+        alert("Thanks for Contacting us..! We Will Contact You Soon...");
+        document.getElementById("formCont").reset();
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
@@ -437,5 +440,4 @@
   }
   window.addEventListener("scroll", scrolling_controller);
 </script>
-
 </html>
