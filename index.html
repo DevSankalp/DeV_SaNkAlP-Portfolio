@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sankalp Srivastava</title>
-  </head>
-  <body class="scroll-smooth text-white" data-theme="dark" id="theme">
-    <img src="bg_img.jpg" alt="bg_image" class="translate-y-full origin-bottom transition-transform duration-1000 fixed w-[100vw] h-[100vh] z-10" id="bg-img">
-    <label class="fixed top-4 left-2 animate-bounce z-50 hidden border-black" onclick="scrolling()" id="arrow_up">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn p-2 bg-black text-cyan-600 contrast-200 brightness-200 hover:bg-cyan-400 hover:text-black"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" /></svg>
-    </label>
-    <div class="hidden">
-      <label class="label">
-        <span class="label-text" id="theme-text">Dark</span>
-      </label>
-    </div>
-    <div class="fixed top-2 right-2 md:hidden w-[100vw] flex flex-col items-end z-40">
-      <a href="" class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn btn-circle p-2 scale-100 bg-white text-black border-0 drop-shadow-[0_10px_20px_rgba(0,0,.5)]"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" class="animate-pulse"/></svg></a>
-      <a href="about.html" class="about before:animate-ping"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn btn-circle p-2 scale-75 bg-black text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" /></svg>
-      <a href="contact.html" class="relative"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn btn-circle p-2 scale-75 bg-black text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg></a>
-      <label class="btn btn-circle swap swap-rotate scale-75 z-10 md:hidden bg-black text-white">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sankalp Srivastava</title>
+</head>
+
+<body class="scroll-smooth text-white duration-500" data-theme="dracula" id="theme">
+  <img src="bg_img.jpg" alt="bg_image" class="translate-y-full origin-bottom transition-transform duration-1000 fixed w-[100vw] h-[100vh] z-10" id="bg-img">
+  <label class="fixed hidden top-4 left-2 animate-bounce z-[51]" onclick="scrolling()" id="arrow_up">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="btn btn-circle p-2 scale-75 bg-black text-white hover:bg-white hover:text-black">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  </label>
+  <div class="fixed top-2 right-2 md:hidden w-[max_content] flex flex-col items-end z-30">
+    <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="btn btn-circle p-2 scale-100 bg-white text-black border-0 drop-shadow-[0_0_5px_rgba(0,0,0,.5)]">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+          class="animate-pulse" />
+      </svg></a>
+    <a href="about.html" class="about before:animate-ping"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="btn btn-circle p-2 scale-75 bg-black text-white drop-shadow-[0_2px_5px_rgba(0,0,0,.5)]">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+      </svg>
+      <a class="relative" onclick="open_modal()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor"
+          class="btn btn-circle p-2 scale-75 bg-black text-white drop-shadow-[0_0_5px_rgba(0,0,0,.5)] hover:bg-black"
+          id="contact-btn">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+        </svg></a>
+      <label class="btn btn-circle swap swap-rotate scale-75 z-10 md:hidden bg-black text-white hover:bg-black drop-shadow-[0_2px_5px_rgba(0,0,0,.5)]">
         <input type="checkbox" onclick="theme()" />
         <svg class="swap-on fill-current w-10 h-10 p-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
@@ -34,356 +51,391 @@
             d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
         </svg>
       </label>
-    </div>
-    <div class="nav-container z-40" id="nav-container">
-      <div class="topnav">
-        <ul class="nav-grid items-center">
-          <label class="btn btn-circle swap swap-rotate scale-75 z-10 bg-black text-white">
-            <input type="checkbox" onclick="theme()" />
-            <svg class="swap-on fill-current w-10 h-10 p-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
-            </svg>
-            <svg class="swap-off fill-current w-10 h-10 p-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-            </svg>
-          </label>
-          <li class="list-items"><a class="links_about before:bottom-[-7px]" href="index.html">Home</a></li>
-          <li class="list-items"><button class="links" id="skill" onclick="skill2(1)">Skills</button></li>
-          <li class="list-items"><a class="links" href="about.html">About</a></li>
-          <li class="list-items" onclick="open_modal()"><button class="links"">Contact</button></li>
-        </ul>
-      </div>
-    </div>
-    <div class="styles-1 fixed" id="styles-1"></div>
-    <div class="styles-2 fixed" id="styles-2"></div>
-    <div class="styles-3 fixed" id="styles-3"></div>
-    <div class="h-[80vh] md:h-[100vh] grid md:grid-cols-[1.6fr_1fr_3fr] md:grid-rows-[2fr_2fr_3fr] fixed" id="main_head">
-      <h1 class="h-max break-normal text-4xl mt-[200px] ml-[100px] md:m-0 md:text-5xl md:col-start-2 md:col-span-3 md:row-start-2 md:mt-16" id="Title">
-        <script src="typewriter.js" ></script>
-        <span class="text-2xl md:text-3xl block">Hi there,</span>
-        <span class="text-xl md:text-2xl block md:inline">this is</span>
-        <strong class="typewrite break-normal"  data-period="2000"
-        data-type='["Sankalp Srivastava"]'></strong>
-      </h1>
-        <p class="text-2xl w-[90%] md:col-start-3 md:row-start-3 md:w-[70%] hidden md:block">
-          a budding software developer and tech enthusiast with profound knowledge debugging and skills mentioned below<span class="typewrite" data-period="300"
-          data-type='["...."]'></span>
-        </p>
-    </div>
-    <hr class="border-0 mb-56" id="skill-start">
-    <section id="skills" class="z-20 relative flex flex-col items-center rounded-lg bg-[#ffffff26] backdrop-blur-sm origin-bottom transition-transform duration-1000 translate-y-full text-white">
-      <div class="flex flex-col items-center" id="skill-gif">
-        <h1 class="text-5xl my-5 text-inherit links" id="skill_head">SKILLS</h1>
-        <img src="https://user-images.githubusercontent.com/30548190/88092733-969f6d00-cbae-11ea-8c86-d9ce6723fe36.gif" alt="" class="w-[60%] md:w-[auto] rounded-[20px] mb-[50px]" />
-      </div>
-      <div class="flex flex-col items-center reveal" id="head1">
-        <h1 class="text-3xl mb-5 text-inherit md:links text-center" id="head-1">Programming Languages</h1>
-        <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center reveal text-white" id="python" data-theme="dark">
-          <img src="images/Py.gif" alt="python" class="w-[150px] justify-self-start m-5">
-          <div class="flex flex-col w-[80%] md:w-[60%]">
-            <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
-              Python Programming
-            </h1>
-            <p class="text-justify mb-5 text-sm md:text-md">
-              Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
-              Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
-            </p>
-          </div>
-        </div>
-        <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center reveal text-white" id="c_lang" data-theme="dark">
-          <img src="https://img.icons8.com/color/144/000000/c-programming.png"/ alt="C" class="w-[150px] justify-self-start m-5">
-          <div class="flex flex-col w-[80%] md:w-[60%]">
-            <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
-              C Language
-            </h1>
-            <p class="text-justify mb-5 text-sm md:text-md">
-              C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly[6] for application software. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col items-center" id="head2">
-        <h1 class="text-3xl m-5 links text-inherit" id="head-2">
-          Web Development
-        </h1>
-        <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center reveal text-white" id="web" data-theme="dark">
-          <img src="https://img.icons8.com/pastel-glyph/200/code--v1.png"/ alt="Web" class="w-[150px] justify-self-start m-5 invert" id="web_img">
-          <div class="flex flex-col w-[80%] md:w-[60%]">
-            <p class="text-justify mb-5 text-sm md:text-md">
-              Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
-            </p>
-          </div>
-        </div>
-        <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center reveal text-white" id="js" data-theme="dark">
-          <img src="images/js.gif" alt="js" class="w-[150px] justify-self-start m-5">
-          <div class="flex flex-col w-[80%] md:w-[60%]">
-            <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
-              JavaScript
-            </h1>
-            <p class="text-justify mb-5 text-sm md:text-md">
-              JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
-            </p>
-          </div>
-        </div>
-        <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center reveal text-white" id="tailwind" data-theme="dark">
-          <img src="https://img.icons8.com/color/144/000000/tailwindcss.png" alt="tailwind" class="w-[150px] justify-self-start m-5">
-          <div class="flex flex-col w-[80%] md:w-[60%]">
-            <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
-              Tailwindcss
-            </h1>
-            <p class="text-justify mb-5 text-sm md:text-md">
-              Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by mixing and matching.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col items-center overflow-hidden" id="head3">
-        <h1 class="text-3xl m-5 links text-inherit" id="head-3">
-          Currently Learning
-        </h1>
-        <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center reveal text-white" id="blender" data-theme="dark">
-          <img src="https://img.icons8.com/clouds/200/000000/blender-3d.png" alt="blender" class="w-[150px] justify-self-start m-5">
-          <div class="flex flex-col w-[80%] md:w-[60%]">
-            <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
-              Blender
-            </h1>
-            <p class="text-justify mb-5 text-sm md:text-md">
-              Blender is a free and open-source 3D computer graphics software tool set used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games. Blender's features include 3D modelling, UV mapping, texturing, digital drawing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animation, match moving, rendering, motion graphics, video editing, and compositing.
-            </p>
-          </div>
-        </div>
-        <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center reveal text-white" id="java" data-theme="dark">
-          <img src="images/java.gif" alt="java" class="w-[150px] justify-self-start m-5">
-          <div class="flex flex-col w-[80%] md:w-[60%]">
-            <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
-              Java Programming
-            </h1>
-            <p class="text-justify mb-5 text-sm md:text-md">
-              Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer relative items-center justify-center md:justify-between p-4 z-20" id="footer">
-      <div class="items-center grid-flow-col">
-        <p class="text-black">Copyright © 2022 - All right reserved</p>
-      </div> 
-      <div class="grid-flow-col gap-4 place-self-center md:justify-self-end">
-        <a href="mailto:sankalpsrivastava1113@gmail.com;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
-        </a> 
-        <a href="https://github.com/DevSankalp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-        <a href="https://discord.gg/SF3ZFKmc"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z"/></svg></a>
-      </div>
-    </footer>
-    <section class="hidden fixed w-[100vw] h-[100vh] top-0 flex justify-center font-inherit bg-[#ffffff20] backdrop-blur-md z-20" id="contact">
-      <div class="md:mt-[100px] md:w-[40%] md:h-[80vh] backdrop-blur-lg rounded-lg bg-[#ffffff40] grid px-12 pb-12 justify-items-center">
-        <button class="btn btn-circle btn-outline absolute right-0 m-2 scale-75 bg-black text-white border-0 hover:bg-white hover:text-black drop-shadow-2xl" onclick="close_modal()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+  </div>
+  <div class="nav-container z-40" id="nav-container">
+    <div class="topnav">
+      <ul class="nav-grid items-center">
+        <label class="group/item btn btn-circle swap swap-rotate bg-black text-white hover:bg-white hover:text-black border-0 relative">
+          <input type="checkbox" onclick="theme()" />
+          <svg class="swap-on fill-current w-10 h-10 p-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
           </svg>
-        </button>
-        <h2 class="text-3xl pt-8 text-inherit font-extrabold links_about before:bottom-8 before:h-[4px] before:w-[100%] before:left-0 relative">I'D BE GLAD TO HEAR FROM YOU</h2>
-        <form method="post" autocomplete="off" name="google-sheet" class="flex flex-col px-8 w-[100%] rounded-lg text-inherit" data-theme>
-          <input type="text" name="Time" class="hidden" id="time">
-          <label for="Name" class="relative my-10 border-0 before:content-[''] before:absolute before:bg-teal-400 before:bottom-0 before:left-0 before:w-[100%] before:h-[2px]">
-            <input type="text" placeholder="Full Name *" name="Name" class="focus:outline-none mb-4 w-[100%] px-2 bg-inherit" required />
-          </label>
-          <label for="Email" class="relative my-10 border-0 before:content-[''] before:absolute before:bg-teal-400 before:bottom-0 before:left-0 before:w-[100%] before:h-[2px]">
-            <input type="email" placeholder="you@example.com *" name="Email" class="focus:outline-none mb-4 w-[100%] px-2 bg-inherit" required />
-          </label>
-          <label for="Company" class="relative my-10 border-0 before:content-[''] before:absolute before:bg-teal-400 before:bottom-0 before:left-0 before:w-[100%] before:h-[2px]">
-            <input type="text" placeholder="Company" name="Company" class="focus:outline-none mb-4 w-[100%] px-2 bg-inherit" />
-          </label>
-          <button type="submit" name="submit" class="mb-8 w-[60%] self-center drop-shadow-2xl btn hover:bg-cyan-300 border-0 bg-white text-black">Submit</button>
-        </form>
+          <svg class="swap-off fill-current w-10 h-10 p-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+          </svg>
+          <span class="group/edit invisible group-hover/item:visible absolute bottom-[-40px] left-[-36px] text-lg w-[max-content] invert duration-75" id="theme-text">Theme : Dark</span>
+        </label>
+        <li class="list-items"><a class="links_about before:bottom-[-7px]" href="index.html">Home</a></li>
+        <li class="list-items"><button class="links" id="skill" onclick="skill2(1)">Skills</button></li>
+        <li class="list-items"><a class="links" href="about.html">About</a></li>
+        <li class="list-items" onclick="open_modal()"><a class="links cursor-pointer" id="contact_btn">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="styles-1 fixed" id="styles-1"></div>
+  <div class="styles-2 fixed" id="styles-2"></div>
+  <div class="styles-3 fixed" id="styles-3"></div>
+  <div class="fixed h-[100vh] grid md:grid-cols-[1.8fr_1fr_3fr] md:grid-rows-[2fr_2fr_3fr]" id="main_head">
+    <h1 class="flex flex-col gap-24 md:block font-extrabold text-4xl mt-36 ml-6 md:m-0 md:text-5xl md:col-start-2 md:col-span-3 md:row-start-2" id="Title">
+      <script src="typewriter.js"></script>
+      <div class="flex flex-col ml-6 md:m-0">
+        <span class="text-2xl md:text-3xl block">Hi there,</span>
+        <span class="text-xl md:text-2xl block ">this is</span>
       </div>
-    </section>
-  </body>
-  <script>
-    function reveal() {
-      var reveals = document.querySelectorAll(".reveal");
+      <div class="grid grid-cols-[140px_1fr] grid-rows-[2fr_1fr]">
+        <Span class="text-[250px] row-span-2" style="font-family: 'dancing script', cursive;">S</Span>
+        <span class="self-end col-start-2">ankalp</span>
+        <span class="self-start col-start-2">rivastava</span>
+      </div>
+    </h1>
+    <p class="w-[80%] font-semibold text-justify justify-self-end md:justify-self-start md:text-start md:text-2xl md:col-start-3 md:row-start-3 md:w-[70%]">
+      a budding software developer and tech enthusiast with profound knowledge of debugging and skills mentioned below<span class="typewrite" data-period="300" data-type='["...."]'></span>
+    </p>
+  </div>
+  <section id="skills" class="z-20 relative flex flex-col items-center rounded-lg bg-[#ffffff26] backdrop-blur-sm origin-bottom transition-transform duration-1000 text-white duration-500 translate-y-full">
+    <div class="flex flex-col items-center" id="skill-gif">
+      <h1 class="text-5xl my-5 text-inherit links" id="skill_head">SKILLS</h1>
+      <img src="https://user-images.githubusercontent.com/30548190/88092733-969f6d00-cbae-11ea-8c86-d9ce6723fe36.gif"
+        alt="" class="w-[60%] md:w-[auto] rounded-[20px] mb-[50px]" />
+    </div>
+    <div class="flex flex-col items-center" id="head1">
+      <h1 class="text-3xl md:mb-5 p-2 font-extrabold text-inherit text-center relative before:absolute before:bg-[#d61c4e] before:w-[100%] before:h-[100%] md:before:h-[120%] before:left-0 before:bottom-[-6px] before:z-[-1] before:rounded-sm" id="head-1">Programming Languages</h1>
+      <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center text-white" id="python"
+        data-theme="dracula">
+        <img src="images/Py.gif" alt="python" class="w-[150px] justify-self-start m-5">
+        <div class="flex flex-col w-[80%] md:w-[60%]">
+          <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
+            Python Programming
+          </h1>
+          <p class="text-justify mb-5 text-sm md:text-md">
+            Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code
+            readability with the use of significant indentation.
+            Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including
+            structured (particularly procedural), object-oriented and functional programming. It is often described as a
+            "batteries included" language due to its comprehensive standard library.
+          </p>
+        </div>
+      </div>
+      <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center text-white" id="c_lang"
+        data-theme="dracula">
+        <img src="https://img.icons8.com/color/144/000000/c-programming.png" / alt="C"
+          class="w-[150px] justify-self-start m-5">
+        <div class="flex flex-col w-[80%] md:w-[60%]">
+          <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
+            C Language
+          </h1>
+          <p class="text-justify mb-5 text-sm md:text-md">
+            C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and
+            remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the
+            targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though
+            decreasingly for application software. C is commonly used on computer architectures that range from the
+            largest supercomputers to the smallest microcontrollers and embedded systems.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center" id="head2">
+      <h1 class="text-3xl font-extrabold py-5 text-inherit w-[100%] text-center relative before:absolute before:w-[100%] before:h-[110%] before:left-0 before:bottom-[-6px] before:bg-[#d61c4e] before:origin-left before:duration-1000 before:z-[-1] before:scale-x-0" id="head-2">
+        Web Development
+      </h1>
+      <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center text-white" id="web" data-theme="dracula">
+        <img src="https://img.icons8.com/pastel-glyph/200/code--v1.png" / alt="Web" class="w-[150px] justify-self-start m-5 invert" id="web_img">
+        <div class="flex flex-col w-[80%] md:w-[60%]">
+          <p class="text-justify mb-5 text-sm md:text-md">
+            Web development is the work involved in developing a website for the Internet (World Wide Web) or an
+            intranet (a private network). Web development can range from developing a simple single static page of plain
+            text to complex web applications, electronic businesses, and social network services. A more comprehensive
+            list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content
+            development, client liaison, client-side/server-side scripting, Web server and network security
+            configuration, and e-commerce development.
+          </p>
+        </div>
+      </div>
+      <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center text-white" id="js" data-theme="dracula">
+        <img src="images/js.gif" alt="js" class="w-[150px] justify-self-start m-5">
+        <div class="flex flex-col w-[80%] md:w-[60%]">
+          <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
+            JavaScript
+          </h1>
+          <p class="text-justify mb-5 text-sm md:text-md">
+            JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the
+            World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for
+            webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated
+            JavaScript engine to execute the code on users' devices.
+          </p>
+        </div>
+      </div>
+      <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center text-white" id="tailwind" data-theme="dracula">
+        <img src="https://img.icons8.com/color/144/000000/tailwindcss.png" alt="tailwind" class="w-[150px] justify-self-start m-5">
+        <div class="flex flex-col w-[80%] md:w-[60%]">
+          <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
+            Tailwindcss
+          </h1>
+          <p class="text-justify mb-5 text-sm md:text-md">
+            Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS
+            frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons
+            or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by
+            mixing and matching.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center overflow-hidden" id="head3">
+      <h1 class="text-3xl font-extrabold py-5 text-inherit w-[100%] text-center relative before:absolute before:w-[100%] before:h-[110%] before:left-0 before:bottom-[-6px] before:bg-[#d61c4e] before:origin-left before:duration-1000 before:z-[-1] before:scale-x-0" id="head-3">
+        Currently Learning
+      </h1>
+      <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center text-white" id="blender" data-theme="dracula">
+        <img src="https://img.icons8.com/clouds/200/000000/blender-3d.png" alt="blender" class="w-[150px] justify-self-start m-5">
+        <div class="flex flex-col w-[80%] md:w-[60%]">
+          <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
+            Blender
+          </h1>
+          <p class="text-justify mb-5 text-sm md:text-md">
+            Blender is a free and open-source 3D computer graphics software tool set used for creating animated films,
+            visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and,
+            formerly, video games. Blender's features include 3D modelling, UV mapping, texturing, digital drawing,
+            raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body
+            simulation, sculpting, animation, match moving, rendering, motion graphics, video editing, and compositing.
+          </p>
+        </div>
+      </div>
+      <div class="md:h-[300px] flex flex-col md:flex-row items-center justify-center text-white" id="java" data-theme="dracula">
+        <img src="images/java.gif" alt="java" class="w-[150px] justify-self-start m-5">
+        <div class="flex flex-col w-[80%] md:w-[60%]">
+          <h1 class="text-2xl mb-5 font-extrabold text-center md:text-justify">
+            Java Programming
+          </h1>
+          <p class="text-justify mb-5 text-sm md:text-md">
+            Java is a high-level, class-based, object-oriented programming language that is designed to have as few
+            implementation dependencies as possible. It is a general-purpose programming language intended to let
+            programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that
+            support Java without the need to recompile. Java applications are typically compiled to bytecode that can
+            run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java
+            is similar to C and C++, but has fewer low-level facilities than either of them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer relative items-center justify-center md:justify-between p-4 z-20 bg-[#FAD3E7]" id="footer">
+    <div class="items-center grid-flow-col">
+      <p class="text-black">Copyright © 2022 - All right reserved</p>
+    </div>
+    <div class="grid-flow-col gap-4 place-self-center md:justify-self-end">
+      <a href="mailto:sankalpsrivastava1113@gmail.com;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24">
+          <path
+            d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+        </svg>
+      </a>
+      <a href="https://github.com/DevSankalp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg></a>
+      <a href="https://discord.gg/SF3ZFKmc"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd" clip-rule="evenodd">
+          <path
+            d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+        </svg></a>
+    </div>
+  </footer>
+  <section class="translate-y-[-100vh] duration-700 fixed top-0 h-[100vh] w-[100vw] flex flex-col items-center justify-end md:justify-center md:gap-16 text-black overflow-hidden drop-shadow-none z-20" id="contact" data-theme="dracula">
+    <button class="btn btn-circle btn-outline absolute md:right-[25%] top-16 md:top-[12%] m-2 bg-white text-black border-0 hover:bg-black hover:text-white drop-shadow-[0_0_10px_rgba(0,0,0,0.2)] z-[99]" onclick="close_modal()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <div class="h-[10%] flex flex-col items-center gap-6 invert" id="contact1">
+      <p class="text-sm md:text-xl">GOT A QUESTION?</p>
+      <h1
+        class="text-xl md:text-4xl font-extrabold relative before:absolute before:bg-black before:bottom-[-10px] before:w-[100%] before:h-[4px] before:origin-center before:duration-500 before:hover:scale-x-0">
+        I'd be glad to hear from you</h1>
+    </div>
+    <div class="w-[100%] flex items-center justify-center font-semibold">
+      <form method="post" autocomplete="off" name="google-sheet"
+        class="flex flex-col px-8 md:w-[35%] rounded-md shadow-[0_0_15px_rgba(0,0,0,0.3)] scale-75 md:scale-100"
+        id="formCont" data-theme="light">
+        <input type="text" name="Time" class="hidden" id="time">
+        <label for="Name"
+          class="my-8 border-0 relative before:absolute before:bg-black before:bottom-0 before:w-[100%] before:h-[2px] before:scale-x-0 before:focus-within:scale-x-100 before:origin-right before:duration-500">
+          Full Name
+          <input type="text" name="Name" class="focus:outline-none bg-inherit w-[100%] p-2 border-2 rounded-sm"
+            required />
+        </label>
+        <label for="Email"
+          class="border-0 relative before:absolute before:bg-black before:bottom-0 before:w-[100%] before:h-[2px] before:scale-x-0 before:focus-within:scale-x-100 before:origin-right before:duration-500">
+          Email
+          <input type="email" placeholder="you@example.com" name="Email"
+            class="focus:outline-none bg-inherit border-2 w-[100%] p-2 rounded-sm" required />
+        </label>
+        <label for="Message"
+          class="my-8 border-0 relative before:absolute before:bg-black before:bottom-0 before:w-[100%] before:h-[2px] before:scale-x-0 before:focus-within:scale-x-100 before:origin-right before:duration-500">
+          Message
+          <textarea type="text" name="Message"
+            class="focus:outline-none bg-inherit w-[100%] p-2 border-2 h-[100px] rounded-sm"></textarea>
+        </label>
+        <button type="submit" name="submit"
+          class="mb-8 w-[50%] self-center hover:drop-shadow-[5px_5px_5px_rgba(0,0,0,0.3)] btn border-0 hover:border-0 hover:bg-cyan-400 bg-blue-600 text-white hover:text-black">Submit</button>
+      </form>
+    </div>
+  </section>
+</body>
+<script>
+  function theme() {
+    var theme = document.getElementById("theme-text").innerHTML;
+    if (theme == "Theme : Dark") {
+      document.getElementById("nav-container").classList.add("invert");
+      document.getElementById("theme").classList.add("text-black");
+      document.getElementById("contact1").classList.remove("invert");
+      document.getElementById("theme").setAttribute("data-theme", "garden");
+      document.getElementById("contact").setAttribute("data-theme", "garden");
+      document.getElementById("theme").classList.remove("text-white");
+      document.getElementById("theme-text").innerHTML = "Theme : Light";
+    }
+    else if (theme == "Theme : Light") {
+      document.getElementById("theme").classList.add("text-white");
+      document.getElementById("contact").setAttribute("data-theme", "dark");
+      document.getElementById("theme").setAttribute("data-theme", "dracula");
+      document.getElementById("theme").classList.remove("text-black");
+      document.getElementById("contact1").classList.add("invert");
+      document.getElementById("nav-container").classList.remove("invert");
+      document.getElementById("theme-text").innerHTML = "Theme : Dark";
+    }
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script>
+  function inViewport($el) {
+    var elH = $el.outerHeight(),
+      H = $(window).height(),
+      r = $el[0].getBoundingClientRect(), t = r.top, b = r.bottom;
+    return Math.max(0, t > 0 ? Math.min(elH, H - t) : Math.min(b, H));
+  }
+  let setValue = false;
+  function set() {
+    if (!setValue) {
+      setValue = true;
+      var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+      function preventDefault(e) {
+        e.preventDefault();
+      }
+      function preventDefaultForScrollKeys(e) {
+        if (keys[e.keyCode]) {
+          preventDefault(e);
+          return false;
+        }
+      }
+      var supportsPassive = false;
+      try {
+        window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+          get: function () { supportsPassive = true; }
+        }));
+      } catch (e) { }
+      var wheelOpt = supportsPassive ? { passive: false } : false;
+      var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+      window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+      window.addEventListener('touchmove', preventDefault, wheelOpt);
+      window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+      document.getElementById("bg-img").classList.remove("translate-y-full");
+      document.getElementById("skills").classList.remove("translate-y-full")
+      setTimeout(() => {
+        window.scrollTo({ top: 6, left: 0, behavior: "smooth" });
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+        window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+        window.removeEventListener('touchmove', preventDefault, wheelOpt);
+        window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+      }, 500);
+    }
+  }
+  function skill2(scrolls) {
+    var scroll = this.scrollY;
+    if (scroll > 5 || scrolls == 1) {
+      skill.classList.add("links_about");
+      skill.classList.remove("links");
+      set();
+    }
+    else {
+      setValue = false;
+      skill.classList.add("links");
+      skill.classList.remove("links_about");
+      document.getElementById("bg-img").classList.add("translate-y-full");
+      document.getElementById("skills").classList.add("translate-y-full")
+    }
+  }
+  window.addEventListener("scroll", skill2);
+  function skill1() {
+    var head2 = document.getElementById("head-2");
+    var head3 = document.getElementById("head-3");
+    if (inViewport($('#head2')) > window.innerHeight - 600) {
+      head2.classList.remove("before:scale-x-0");
+    }
+    if (inViewport($('#head3')) > window.innerHeight - 600) {
+      head3.classList.remove("before:scale-x-0");
+    }
+    if (inViewport($('#head2')) < window.innerHeight - 600) {
+      head2.classList.add("before:scale-x-0");
+    }
+    if (inViewport($('#head3')) < window.innerHeight - 600) {
+      head3.classList.add("before:scale-x-0");
+    }
+  }
+  window.addEventListener("scroll", skill1);
+</script>
+<script>
+  function open_modal() {
+    document.getElementById("theme").classList.add("overflow-hidden");
+    document.getElementById("contact_btn").classList.add("links_about");
+    document.getElementById("contact-btn").classList.add("invert");
+    document.getElementById("contact").classList.remove("translate-y-[-100vh]");
+    document.getElementById("contact-btn").classList.remove("scale-75");
+    document.getElementById("contact_btn").classList.remove("links");
+  }
+  function close_modal() {
+    document.getElementById("contact").classList.add("translate-y-[-100vh]");
+    document.getElementById("contact_btn").classList.add("links");
+    document.getElementById("contact-btn").classList.add("scale-75");
+    document.getElementById("contact-btn").classList.remove("invert");
+    document.getElementById("theme").classList.remove("overflow-hidden");
+    document.getElementById("contact_btn").classList.remove("links_about");
+  }
+</script>
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyoPip57lLobQPruelfN-jzKb1hmPriwmtKi2DgMvNZHvOB0K8LWkAh5gOS-zl6dLk09A/exec";
+  const form = document.forms['google-sheet'];
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    var time = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
+    var timestamp = document.getElementById("time");
+    timestamp.setAttribute("value", time);
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script>
+  function scrolling() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function inViewport($el) {
+    var elH = $el.outerHeight(),
+      H = $(window).height(),
+      r = $el[0].getBoundingClientRect(), t = r.top, b = r.bottom;
+    return Math.max(0, t > 0 ? Math.min(elH, H - t) : Math.min(b, H));
+  }
+  var name = document.getElementById("footer");
+  function scrolling_controller() {
+    if (inViewport($("footer")) + 200 > 200) {
+      document.getElementById("arrow_up").classList.remove("hidden");
+    }
+    else {
+      document.getElementById("arrow_up").classList.add("hidden");
+    }
+  }
+  window.addEventListener("scroll", scrolling_controller);
+</script>
 
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 40;
-
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-        } else {
-          reveals[i].classList.remove("active");
-        }
-      }
-    }
-    window.addEventListener("scroll", reveal);
-  </script>
-  <script>
-    function theme() {
-      var theme = document.getElementById("theme-text").innerHTML;
-      if (theme == "Dark") {
-        document.getElementById("nav-container").classList.add("invert");
-        document.getElementById("theme-text").innerHTML = "Light";
-        document.getElementById("theme").setAttribute("data-theme", "garden");
-        document.getElementById("theme").classList.remove("text-white");
-        document.getElementById("theme").classList.add("text-black");
-      }
-      else if (theme == "Light") {
-        document.getElementById("nav-container").classList.remove("invert");
-        document.getElementById("theme-text").innerHTML = "Dark";
-        document.getElementById("theme").setAttribute("data-theme", "dark");
-        document.getElementById("theme").classList.remove("text-black");
-        document.getElementById("theme").classList.add("text-white");
-      }
-    }
-  </script>
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-  <script>
-    function inViewport($el) {
-      var elH = $el.outerHeight(),
-        H = $(window).height(),
-        r = $el[0].getBoundingClientRect(), t = r.top, b = r.bottom;
-      return Math.max(0, t > 0 ? Math.min(elH, H - t) : Math.min(b, H));
-    }
-    let setValue = false;
-    function set() {
-      if (!setValue) {
-        setValue = true;
-        var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-        function preventDefault(e) {
-          e.preventDefault();
-        }
-        function preventDefaultForScrollKeys(e) {
-          if (keys[e.keyCode]) {
-            preventDefault(e);
-            return false;
-          }
-        }
-        var supportsPassive = false;
-        try {
-          window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-            get: function () { supportsPassive = true; }
-          }));
-        } catch (e) { }
-        var wheelOpt = supportsPassive ? { passive: false } : false;
-        var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-        window.addEventListener('DOMMouseScroll', preventDefault, false);
-        window.addEventListener(wheelEvent, preventDefault, wheelOpt);
-        window.addEventListener('touchmove', preventDefault, wheelOpt);
-        window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-        setTimeout(() => {
-          window.scrollTo({top: 224, left: 0, behavior: "smooth"});
-          document.getElementById("bg-img").classList.add("translate-y-0");
-          document.getElementById("bg-img").classList.remove("translate-y-full");
-          document.getElementById("skills").classList.add("translate-y-0");
-          document.getElementById("skills").classList.remove("translate-y-full")
-          window.removeEventListener('DOMMouseScroll', preventDefault, false);
-          window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-          window.removeEventListener('touchmove', preventDefault, wheelOpt);
-          window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-        }, 100);
-      }
-    }
-    function skill2(scrolls) {
-        var scroll = this.scrollY;
-        if (scroll > 200 || scrolls == 1) {
-          skill.classList.add("links_about");
-          skill.classList.remove("links");
-          set();
-        }
-        else {
-          setValue = false;
-          skill.classList.add("links");
-          skill.classList.remove("links_about");
-          document.getElementById("bg-img").classList.add("translate-y-full");
-          document.getElementById("bg-img").classList.remove("translate-y-0");
-          document.getElementById("skills").classList.add("translate-y-full")
-          document.getElementById("skills").classList.remove("translate-y-0");
-        }
-      }
-    window.addEventListener("scroll", skill2);
-    function skill1() {
-      var skill = document.getElementById("skill");
-      var head1 = document.getElementById("head-1");
-      var head2 = document.getElementById("head-2");
-      var head3 = document.getElementById("head-3");
-      var skills = document.getElementById("skills");
-      if (inViewport($('#skills')) < window.innerHeight-600) {
-        if (inViewport($('#head1')) < window.innerHeight - 400) {
-          head1.classList.add("links");
-          head1.classList.remove("links_about1");
-        }
-      }
-      if(inViewport($('#skills')) > window.innerHeight - 400) {
-        if (inViewport($('#head2')) < window.innerHeight - 600) {
-          head2.classList.add("links");
-          head2.classList.remove("links_about1");
-        }
-        if (inViewport($('#head3')) < window.innerHeight - 600) {
-          head3.classList.add("links");
-          head3.classList.remove("links_about1");
-        }
-        if (inViewport($('#head1')) > window.innerHeight - 400) {
-          head1.classList.add("links_about1");
-          head1.classList.remove("links");
-        }
-        if (inViewport($('#head2')) > window.innerHeight - 600) {
-          head2.classList.add("links_about1");
-          head2.classList.remove("links");
-        }
-        if (inViewport($('#head3')) > window.innerHeight - 600) {
-          head3.classList.add("links_about1");
-          head3.classList.remove("links");
-        }
-      }
-    }
-    window.addEventListener("scroll", skill1);
-  </script>
-  <script>
-    var contact = document.getElementById("contact");
-    function open_modal() {
-      contact.classList.remove("hidden");
-      document.getElementById("theme").classList.add("overflow-hidden");
-    }
-    function close_modal() {
-      contact.classList.add("hidden");
-      document.getElementById("theme").classList.remove("overflow-hidden");
-    }
-  </script>
-  <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyoPip57lLobQPruelfN-jzKb1hmPriwmtKi2DgMvNZHvOB0K8LWkAh5gOS-zl6dLk09A/exec";
-    const form = document.forms['google-sheet'];
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      var time = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
-      var timestamp = document.getElementById("time");
-      timestamp.setAttribute("value", time);
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  <script>
-    function scrolling() {
-      window.scrollTo({ top: 0 , behavior: 'smooth' });
-    }
-    function inViewport($el) {
-      var elH = $el.outerHeight(),
-        H = $(window).height(),
-        r = $el[0].getBoundingClientRect(), t = r.top, b = r.bottom;
-      return Math.max(0, t > 0 ? Math.min(elH, H - t) : Math.min(b, H));
-    }
-    var name = document.getElementById("footer");
-    function scrolling_controller() {
-      if (inViewport($("footer"))+200 > 200) {
-        document.getElementById("arrow_up").classList.remove("hidden");
-      }
-      else {
-        document.getElementById("arrow_up").classList.add("hidden");
-      }
-    }
-    window.addEventListener("scroll", scrolling_controller);
-  </script>
 </html>

@@ -50,6 +50,7 @@ body {
 }
 
 .links {
+  position: relative;
   color: black;
   padding: 0 5px;
   font-size: 25px;
@@ -86,16 +87,10 @@ footer {
   background-image: linear-gradient(to bottom right, rgba(184, 255, 249, 0.5), rgba(184, 255, 249, 1));
 }
 
+/* Scrollbar */
+
 ::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  backdrop-filter: blur(4px);
-  background: #fff1;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #fff2;
+  display: none;
 }
 
 /* Content Reveal on scroll */
